@@ -210,11 +210,13 @@ textarea {
   width: 100%;
   z-index: 4;
   background: var(--clr-second-bg);
-  padding: 54px 3% 71px 3%;
   transition: all 0.5s ease;
   display: none;
   animation: updown2 0.5s ease forwards;
   box-shadow: 0px 40px 50px 0px rgba(0, 0, 0, 0.4);
+}
+.header .mega-menu.mega-menu1 {
+  padding: 54px 3% 71px 3%;
 }
 .header .header-nav-item:hover .mega-menu {
   display: block;
@@ -235,16 +237,28 @@ textarea {
   justify-content: space-between;
   gap: 30px;
 }
-.header .mega-menu .mega-menu-list .mega-menu-col:nth-child(2) {
+.header .mega-menu.mega-menu3 .mega-menu-list {
+  margin-top: 3px;
+}
+.header .mega-menu.mega-menu1 .mega-menu-list .mega-menu-col:nth-child(2) {
   width: 50%;
 }
-.header .mega-menu .mega-menu-list .mega-menu-col:nth-child(2) .mega-menu-list {
+.header .mega-menu.mega-menu3 .mega-menu-list .mega-menu-col {
+  padding: 5%;
+}
+.header .mega-menu.mega-menu3 .mega-menu-list .mega-menu-col:nth-child(1) {
+  background: #F4F1EA;
+}
+.header .mega-menu.mega-menu3 .mega-menu-list .mega-menu-col:nth-child(2) {
+  width: 80%;
+}
+.header .mega-menu.mega-menu1 .mega-menu-list .mega-menu-col:nth-child(2) .mega-menu-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
 }
-.header .mega-menu .mega-menu-list .mega-menu-col:nth-child(2) .mega-menu-list li {
+.header .mega-menu.mega-menu1 .mega-menu-list .mega-menu-col:nth-child(2) .mega-menu-list li {
   width: 45%;
 }
 .header .mega-menu .mega-menu-col .mega-menu-title {
