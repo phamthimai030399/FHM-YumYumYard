@@ -1,0 +1,271 @@
+/* BANNER HOME  */
+#fhm-banner {
+  background: url(../assets/images/banner-home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 1600/920;
+  position: relative;
+}
+.banner .banner-content {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+}
+.banner .banner-content button {
+  margin-top: 35px;
+}
+.banner .element-decor:nth-child(1) {
+  width: 5%;
+  left: 35%;
+  bottom: 0%;
+  animation: updown ease-in-out 5s infinite alternate;
+}
+.banner .element-decor:nth-child(2) {
+  width: 40%;
+  left: 50%;
+  bottom: 25%;
+}
+@media (max-width: 1199.99px) {
+  .banner .banner-content button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991.99px) {
+  .banner .banner-content {
+    display: none;
+  }
+}
+
+/* CATEGORY OUTSTANDING */
+.category-outstanding {
+  padding-top: 120px;
+  position: relative;
+}
+.category-outstanding .element-decor:nth-child(1) {
+  left: 0;
+  top: 15%;
+  width: 9%;
+  animation: updown ease-in-out 6s infinite alternate;
+}
+.category-outstanding .element-decor:nth-child(2) {
+  right: 0;
+  top: 0%;
+  width: 15%;
+  animation: updown ease-in-out 7s infinite alternate;
+}
+.category-outstanding .category-outstanding-container {
+  margin-top: 20px;
+}
+.category-outstanding .category-outstanding-container .hot-nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #d9d9d9;
+}
+.category-outstanding .hot-nav .nav-link.active {
+  background: transparent;
+  color: var(--clr-pimary-green);
+}
+
+.category-outstanding .hot-nav .nav-link {
+  padding: 0;
+  padding-bottom: 20px;
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.category-outstanding .hot-nav .nav-link.active {
+  background: transparent;
+  color: #6d8434;
+}
+.category-outstanding .hot-nav .nav-link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: #6d8434;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+}
+.category-outstanding .hot-nav .nav-link.active::after {
+  width: 100%;
+}
+.product.product-slide .product-img {
+  border: none;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+.product.product-slide .product-content {
+  padding-top: 25px;
+  text-align: center;
+}
+.product.product-slide .product-content .product-title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+.product.product-slide .product-content .product-rating {
+  margin-top: 12px;
+}
+.product.product-slide .product-content .price {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 28px; /* 175% */
+}
+.product.product-slide .product-content .price .price-new {
+  color: #000;
+  font-weight: 600;
+}
+.product.product-slide .product-content .price .price-old {
+  color: #656668;
+  font-weight: 400;
+}
+@media only screen and (max-width: 480px) {
+  .category-outstanding .category-outstanding-container .hot-nav {
+    gap: 35px;
+  }
+  .category-outstanding .hot-nav .nav-link {
+    font-size: 10px;
+  }
+  .product.product-slide .product-content .product-title {
+    font-size: 16px;
+  }
+  .product.product-slide .product-content .price {
+    font-size: 14px;
+  }
+}
+
+/* START LIFETIME */
+.lifetime {
+  padding: 200px 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: url(../assets/images/Union.png);
+  background-repeat: repeat-x;
+  background-size: cover;
+  position: relative;
+}
+.lifetime .element-decor:nth-child(1){
+  top: 20%;
+  right: 3%;
+  width: 6%;
+  animation: updown ease-in-out 5s infinite alternate;
+}
+.lifetime .element-decor:nth-child(2){
+  top: 40%;
+  left: 0%;
+  width: 10%;
+  animation: updown ease-in-out 6s infinite alternate;
+}
+.lifetime .element-decor:nth-child(3){
+  top: 80%;
+  left: 0%;
+  width: 9%;
+  animation: updown ease-in-out 3s infinite alternate;
+}
+.lifetime .lifetime-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 37px;
+  row-gap: 10px;
+  margin-bottom: 65px;
+  margin-top: 25px;
+}
+.lifetime .lifetime-tag p {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.24px;
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #fff;
+  opacity: 0.9;
+}
+.lifetime .lifetime-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.lifetime .lifetime-warranty {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  align-items: center;
+}
+.lifetime .lifetime-warranty .lifetime-warranty-icon {
+  max-width: 40px;
+  flex-shrink: 0;
+}
+.lifetime .lifetime-warranty .lifetime-warranty-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.lifetime .lifetime-warranty .lifetime-warranty-content span {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+  display: block;
+}
+.lifetime .lifetime-warranty .lifetime-warranty-content p {
+  color: #656668;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.24px;
+  margin: 0;
+  padding: 0;
+}
+.lifetime .lifetime-main {
+    margin-top: 120px;
+}
+@media (max-width: 575.99px) {
+    .lifetime .lifetime-tag p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+      .lifetime .lifetime-warranty {
+        justify-content: center;
+        width: 100%;
+      }
+      .lifetime .lifetime-warranty .lifetime-warranty-content p {
+        font-size: 12px;
+    }
+      .lifetime .lifetime-warranty .lifetime-warranty-content span {
+        font-size: 16px;
+    }
+}
