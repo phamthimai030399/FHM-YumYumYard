@@ -103,42 +103,9 @@
 .category-outstanding .hot-nav .nav-link.active::after {
   width: 100%;
 }
-.product.product-slide .product-img {
+.product.product-slide {
+  background: none;
   border: none;
-  aspect-ratio: 1/1;
-  border-radius: 10px;
-}
-.product.product-slide .product-content {
-  padding-top: 25px;
-  text-align: center;
-}
-.product.product-slide .product-content .product-title {
-  color: #000;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  text-transform: capitalize;
-  margin-top: 5px;
-}
-.product.product-slide .product-content .product-rating {
-  margin-top: 12px;
-}
-.product.product-slide .product-content .price {
-  margin-top: 16px;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 28px; /* 175% */
-}
-.product.product-slide .product-content .price .price-new {
-  color: #000;
-  font-weight: 600;
-}
-.product.product-slide .product-content .price .price-old {
-  color: #656668;
-  font-weight: 400;
 }
 @media only screen and (max-width: 480px) {
   .category-outstanding .category-outstanding-container .hot-nav {
@@ -146,12 +113,6 @@
   }
   .category-outstanding .hot-nav .nav-link {
     font-size: 10px;
-  }
-  .product.product-slide .product-content .product-title {
-    font-size: 16px;
-  }
-  .product.product-slide .product-content .price {
-    font-size: 14px;
   }
 }
 
@@ -165,19 +126,19 @@
   background-size: cover;
   position: relative;
 }
-.lifetime .element-decor:nth-child(1){
+.lifetime .element-decor:nth-child(1) {
   top: 20%;
   right: 3%;
   width: 6%;
   animation: updown ease-in-out 5s infinite alternate;
 }
-.lifetime .element-decor:nth-child(2){
+.lifetime .element-decor:nth-child(2) {
   top: 40%;
   left: 0%;
   width: 10%;
   animation: updown ease-in-out 6s infinite alternate;
 }
-.lifetime .element-decor:nth-child(3){
+.lifetime .element-decor:nth-child(3) {
   top: 80%;
   left: 0%;
   width: 9%;
@@ -251,21 +212,197 @@
   padding: 0;
 }
 .lifetime .lifetime-main {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 @media (max-width: 575.99px) {
-    .lifetime .lifetime-tag p {
-        font-size: 12px;
-        line-height: 20px;
-      }
-      .lifetime .lifetime-warranty {
-        justify-content: center;
-        width: 100%;
-      }
-      .lifetime .lifetime-warranty .lifetime-warranty-content p {
-        font-size: 12px;
-    }
-      .lifetime .lifetime-warranty .lifetime-warranty-content span {
-        font-size: 16px;
-    }
+  .lifetime .lifetime-tag p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .lifetime .lifetime-warranty {
+    justify-content: center;
+    width: 100%;
+  }
+  .lifetime .lifetime-warranty .lifetime-warranty-content p {
+    font-size: 12px;
+  }
+  .lifetime .lifetime-warranty .lifetime-warranty-content span {
+    font-size: 16px;
+  }
+}
+
+/* BEST SELLERS */
+.best-sellers {
+  margin-top: 120px;
+}
+.block-title p {
+  color: #656668;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.24px;
+}
+.best-sellers .best-seller-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+@media (max-width: 1199.99px) {
+  .best-sellers .best-seller-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 991.99px) {
+  .best-sellers .best-seller-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .product .product-content .product-button {
+    display: flex;
+  }
+  .block-title p {
+    display: none;
+  }
+}
+
+/* HOW IT WORKS */
+.confide {
+  margin-top: 120px;
+  position: relative;
+  z-index: 2;
+}
+.confide .confide-container {
+  padding: 100px 5% 150px 5%;
+  display: flex;
+  gap: 7%;
+}
+.confide .confide-container .confide-img {
+  width: 80%;
+}
+.confide .confide-container .confide-content {
+  margin-top: 65px;
+}
+.confide .confide-container .confide-name {
+  margin-top: 5px;
+}
+.confide .confide-container .confide-name a {
+  color: #367c2e;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.42px;
+}
+.confide .confide-container p {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.24px;
+  opacity: 0.9;
+}
+.confide .element-decor:nth-child(1) {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media (max-width: 991.99px) {
+  .confide .confide-container {
+    display: block;
+  }
+  .confide .element-decor:nth-child(1) {
+    display: none;
+  }
+  .confide .confide-container .confide-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 30px;
+  }
+  .confide .confide-container .confide-img img {
+    height: auto;
+  }
+  .confide .confide-container .confide-content {
+    margin-top: 0;
+  }
+  .confide .confide-container .confide-name a {
+    font-size: 23px;
+  }
+  .confide .confide-container p {
+    padding-top: 0px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 575.99px) {
+  .confide .confide-container .confide-item {
+    flex-direction: column;
+  }
+  .confide .confide-container .confide-content {
+    margin-top: 30px;
+  }
+  .confide .confide-container {
+    padding-top: 50px;
+  }
+}
+
+/* TALK */
+.talk {
+  margin-top: -5%;
+  position: relative;
+}
+.talk .talk-container {
+  top: 25%;
+  position: absolute;
+  width: 100%;
+}
+.talk .talk-container .talk-content {
+  margin-left: 58%;
+  padding: 90px 65px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+.talk .talk-container .talk-content h3.block-title-main{
+  text-align: left;
+  line-height: 55px;
+}
+.talk .talk-container .talk-content p {
+ margin-top: 10px;
+ opacity: 0.8;
+}
+.talk .talk-container .talk-content button{
+ margin-top:  25px;
+}
+@media (max-width: 1399.99px) {
+  .talk .talk-container .talk-content {
+    margin-left: 50%;
+    padding: 80px 60px;
+}
+}
+@media (max-width: 1199.99px) {
+  .talk .talk-container .talk-content {
+    margin-left: 35%;
+    padding: 60px 50px;
+}
+  .talk .talk-container .talk-content h3.block-title-main {
+    font-size: 26px;
+  }
+}
+@media (max-width: 991.99px) {
+  .talk {
+    margin-top: -15%;
+  }
+  .talk .talk-container .talk-content {
+    margin: 0 10%;
+}
+}
+@media (max-width: 480px) {
+  .talk .talk-container .talk-content p {
+    font-size: 12px;
+  }
+  .talk .talk-container .talk-content {
+    padding: 50px 40px;
+    margin: 0;
+  }
 }
