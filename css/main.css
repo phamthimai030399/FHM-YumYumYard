@@ -64,6 +64,7 @@ p {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.24px;
+  text-align: justify;
 }
 button {
   background-color: transparent;
@@ -106,6 +107,43 @@ textarea {
   }
   100% {
     transform: translateY(-70px);
+  }
+}
+@keyframes updown2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes leafOne {
+  0% {
+    transform: translateX(-5px) rotate(-5deg);
+}
+16.67% {
+    transform: translateX(0) translateY(2px) rotate(-1deg);
+}
+33.33% {
+    transform: translateX(5px) translateY(4px) rotate(3deg);
+}
+50% {
+    transform: translateX(2px) translateY(0px) rotate(5deg);
+}
+66.67% {
+    transform: translateX(5px) translateY(4px) rotate(3deg);
+}
+83.33% {
+    transform: translateX(0) translateY(2px) rotate(-1deg);
+}
+100% {
+    transform: translateX(-5px) translateY(0) rotate(-5deg);
+}
+}
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
   }
 }
 @media (min-width: 1400px) {
@@ -498,7 +536,7 @@ h6.block-title-top {
 h2.block-title-main {
   font-size: 48px;
   font-weight: 300;
-  line-height: 60px; /* 125% */
+  line-height: 64px; /* 125% */
   letter-spacing: 0.72px;
 }
 h3.block-title-main {
