@@ -10,20 +10,20 @@ const filterRangeSlider = document.querySelector(
     "#fhm-product-list .products-filter-item .products-filter-item-range-slider-input .max"
   );
   
-//   rangeSlider(filterRangeSlider, {
-//     // min value
-//     min: 0,
-//     // max value
-//     max: 100,
-//     // step size
-//     step: 1,
-//     // set input value
-//     value: [0, 100],
-//     onInput: function (valueSet) {
-//       filterRangeSliderInputMin.value = valueSet[0];
-//       filterRangeSliderInputMax.value = valueSet[1];
-//     },
-//   });
+  rangeSlider(filterRangeSlider, {
+    // min value
+    min: 0,
+    // max value
+    max: 100,
+    // step size
+    step: 1,
+    // set input value
+    value: [0, 100],
+    onInput: function (valueSet) {
+      filterRangeSliderInputMin.value = valueSet[0];
+      filterRangeSliderInputMax.value = valueSet[1];
+    },
+  });
   
   // Change range slider input value
   const changeValue = () => {
@@ -116,6 +116,14 @@ const filterRangeSlider = document.querySelector(
         products.forEach((product) => product.classList.remove("product-row"));
       }
     });
+  });
+
+  const checkboxColors = Array.prototype.slice.call(
+    document.querySelectorAll('.products .products-filter-list .products-filter-item .products-filter-item-criteria[data-type=checkbox-color] .checkbox-color')
+  );
+  checkboxColors.forEach((checkboxColor) => {
+    let color = checkboxColor.getAttribute("data-color");
+    checkboxColor.setAttribute("style", "background-color: #" + color);
   });
   
   
