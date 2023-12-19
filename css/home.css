@@ -864,6 +864,8 @@
   background: url(../assets/images/Bg-newsletter.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+#fhm-homepage .newsletter {
   transform: translateY(-70px);
 }
 .newsletter .container {
@@ -942,6 +944,8 @@
   background: url(../assets/images/bg-footer.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.footer.footer-homepage {
   transform: translateY(-75px);
 }
 .footer .footer-main {
