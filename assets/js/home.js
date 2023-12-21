@@ -20,10 +20,10 @@
   const categorySlider = new Swiper(".category-slider", {
     loop: true,
     speed: 1000,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     slidesPerView: 2,
     spaceBetween: 15,
     freeMode: true,

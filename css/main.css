@@ -693,7 +693,8 @@ h3.block-title-main {
   margin-top: 12px;
 }
 .product .product-content .product-rating::before,
-.detail-info .detail-rating .rating::before {
+.detail-info .detail-rating .rating::before,
+.testimonial-rating::before {
   content: "★★★★★";
   font-size: 20px;
     background: linear-gradient(90deg, #6d8434 var(--percent), #D1D3D5 var(--percent));
