@@ -45,13 +45,12 @@
 /* CONTACT  */
 .contact {
   margin-top: 100px;
-  margin-bottom: 148px;
 }
 .contact h2.block-title-main {
   text-align: center;
 }
-.contact .main-form .main-form-control{
-    border: 1px solid #dedede;
+.contact .main-form .main-form-control {
+  border: 1px solid #dedede;
 }
 @media only screen and (max-width: 991.98px) {
   .contact {
@@ -62,11 +61,11 @@
   margin: 25px 0;
   text-align: end;
   color: #000;
-font-size: 12px;
-font-style: normal;
-font-weight: 300;
-line-height: 25px;
-letter-spacing: 0.18px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0.18px;
 }
 .contact .contact-form .contact-form-heading p,
 .contact .contact-form .contact-form-heading span {
@@ -79,11 +78,89 @@ letter-spacing: 0.18px;
   align-items: center;
 }
 .contact .contact-form .contact-form-submit {
-    margin-top: 50px;
-    width: 100%;
+  margin-top: 50px;
+  width: 100%;
 }
-@media only screen and (max-width: 480.98px) {
+@media only screen and (max-width: 480px) {
   .contact .contact-form .contact-form-heading p {
     display: block;
   }
+}
+
+/* CONTACT MAP  */
+.contact-map {
+  margin-top: 120px;
+}
+.contact-map .block-title {
+  padding: 0 15%;
+}
+.contact-map .block-title .color-grey {
+  color: rgba(0, 0, 0, 0.3);
+}
+.contact-map .map-img {
+  margin-top: 50px;
+}
+@media only screen and (max-width: 991.99px) {
+  .contact-map .block-title {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-map .block-title .color-grey {
+    font-size: 24px;
+  }
+}
+
+/* OUR STORE  */
+.our-store {
+  margin-top: 120px;
+  margin-bottom: 140px;
+}
+.our-store .stores {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  row-gap: 55px;
+  column-gap: 30px;
+}
+.our-store .store {
+  max-width: 350px;
+  border-radius: 10px;
+  border: 0.5px solid #dedede;
+  background: #f4f1ea;
+  padding: 30px 20px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.our-store .store-item span {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.21px;
+}
+.our-store .store-item p {
+  color: #383838;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  margin: 0;
+}
+@media (max-width: 991.99px) {
+  .our-store .store {
+    max-width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .our-store .stores {
+    row-gap: 20px;
+}
+.our-store .store {
+  gap: 10px;
+  padding: 20px 20px 30px 30px
+}
+.our-store .store-item p {
+  font-size: 14px;
+}
 }

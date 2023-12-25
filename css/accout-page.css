@@ -1,0 +1,24 @@
+.accout {
+margin-top: 120px;
+}
+.accout .title{
+    color: #000;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 0.48px;
+}
+.accout .title .line {
+    width: 32.737px;
+    height: 3px;
+    flex-shrink: 0;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.accout .accout-container .accout-item .item-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+}
