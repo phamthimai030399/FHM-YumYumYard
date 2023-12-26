@@ -1,0 +1,195 @@
+.about-us {
+  margin-top: 120px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.about-us .element-decor {
+    z-index: -1;
+}
+.about-us .element-decor:nth-child(1) {
+    width: 5%;
+    top: 20%;
+    left: 15%;
+    animation: leafOne 5s linear infinite;
+}
+.about-us .element-decor:nth-child(2) {
+    width: 10%;
+    top: 10%;
+    right: 5%;
+    animation: leafOne 5s linear infinite;
+}
+.about-us .element-decor:nth-child(3) {
+    width: 5%;
+    bottom: 35%;
+    right: 15%;
+    animation: leafOne 5s linear infinite;
+}
+.about-us .element-decor:nth-child(4) {
+    width: 5%;
+    bottom: 30%;
+    left: 5%;
+    animation: leafOne 5s linear infinite;
+}
+.about-us .element-decor:nth-child(5) {
+    width: 7%;
+    bottom: 0;
+    left: 0%;
+    animation: leafOne 8s linear infinite;
+}
+.about-us .bg-about-us {
+  margin: 90px 0;
+}
+.about-us .about-us-content {
+  margin: 0 15%;
+}
+.about-us .about-us-content p {
+  color: #656668;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.24px;
+}
+@media (max-width: 991.99px) {
+  .about-us .about-us-content {
+    margin: 0;
+  }
+  .about-us .about-us-content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575.99px) {
+    .about-us .element-decor:nth-child(1) {
+        width: 19%;
+        top: 16%;
+        left: 5%;
+        animation: leafOne 8s linear infinite;
+    }
+    .about-us .element-decor:nth-child(2) {
+        width: 15%;
+        top: 10%;
+        right: 0%;
+        animation: leafOne 8s linear infinite;
+    }
+    .about-us .element-decor:nth-child(3) {
+        width: 7%;
+        bottom: 56%;
+        right: 2%;
+        animation: leafOne 10s linear infinite;
+    }
+    .about-us .element-decor:nth-child(4) {
+        width: 7%;
+        bottom: 52%;
+        left: 0%;
+        animation: leafOne 10s linear infinite;
+    }
+    .about-us .element-decor:nth-child(5) {
+        width: 20%;
+        bottom: 5%;
+        left: 0%;
+        animation: leafOne 10s linear infinite;
+    }
+}
+
+/* ORGANIC */
+.organic {
+    margin-top: 120px;
+    position: relative;
+}
+.organic .element-decor:nth-child(1) {
+    top: -20%;
+    width: 6%;
+    right: 10%;
+    animation: leafOne 10s linear infinite;
+}
+.organic h2.block-title-main span {
+    color: #6D8434;
+    display: block;
+}
+.organic p {
+    margin: 12px 0 0 0;
+}
+.organic .organic-container {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+}
+.organic .organic-content {
+   width: 45%;
+}
+.organic .organic-content .organic-brand {
+   display: flex;
+   justify-content: space-between;
+   gap: 40px;
+   margin-top: 40px;
+}
+.organic .organic-content .organic-brand .item {
+  width: 25%;
+}
+.organic .organic-content .organic-brand .brand-img {
+  padding: 0 10%;
+}
+.organic .organic-content .organic-brand .brand-info {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 16px;
+}
+.organic .organic-img {
+    margin-left: 55%;
+}
+@media (max-width: 1199.99px) {
+    .organic .organic-container {
+        position: unset;
+    }
+    .organic .organic-content {
+        width: 50%;
+     }
+}
+@media (max-width: 991.99px) {
+    .organic .organic-content {
+        width: 100%;
+    }
+    .organic .organic-img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .organic .organic-content .organic-brand {
+        gap: 15px;
+    }
+    .organic {
+        margin-top: 50px;
+    }
+    .organic .element-decor:nth-child(1) {
+        display: none;
+    }
+}
+
+.our-service {
+    position: relative;
+}
+.our-service-container {
+    position: absolute;
+    top: 4.5%;
+    width: 100%;
+    height: 100%;
+}
+.our-service-container .services {
+   margin-left: 70%;
+   background: #6D8434;
+}
+.our-service-container .services .item {
+   display: flex;
+   gap: 30px;
+}
+.our-service-container .services .item .service-img {
+   max-width: 72px;
+}
+.our-service-container .services .item .service-content {
+   color: #fff;
+}

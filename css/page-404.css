@@ -1,0 +1,75 @@
+.page-404 {
+  position: relative;
+}
+.page-404 .content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  right: 10%;
+}
+.page-404 .content h2.block-title-main {
+  color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  font-style: italic;
+}
+.page-404 .content .button-back {
+  margin-top: 40px;
+  padding: 20px 118px;
+  border-radius: 10px;
+  background: #367c2e;
+  text-align: center;
+  width: fit-content;   
+  height: fit-content;
+}
+.page-404 .content .button-back a {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 0;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 1199.99px) {
+    .page-404 .content h2.block-title-main {
+        font-size: 38px;
+    }
+    .page-404 .content .button-back {
+        padding: 20px 60px;
+      }
+}
+@media (max-width: 991.99px) {
+    .page-404 .content {
+        left: 45%;
+    }
+    .page-404 .content h2.block-title-main {
+        font-size: 26px;
+    }
+    .page-404 .content .button-back {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 12px;
+      }
+    .page-404 .content .button-back a {
+        font-size: 12px;
+      }
+}
+@media (max-width: 480px) {
+    .page-404 .content {
+        left: 40%;
+    }
+    .page-404 .content h2.block-title-main {
+        font-size: 20px;
+    }
+    .page-404 .content .button-back {
+        margin-top: 20px;
+        padding: 5px 20px;
+    }
+    .page-404 .content .button-back a {
+        font-size: 10px;
+    }
+}
