@@ -512,6 +512,7 @@
 .find-out-more {
   padding-top: 17%;
   position: relative;
+  margin-bottom: 30%;
 }
 .find-out-more .element-decor:nth-child(1) {
   top: 7%;
@@ -573,9 +574,6 @@
   }
 }
 
-.library-instagram {
-  margin-top: 30%;
-}
 .library-instagram .block-title {
   padding: 0 20%;
 }
@@ -865,6 +863,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+#fhm-about-page .newsletter ,
 #fhm-homepage .newsletter {
   transform: translateY(-70px);
 }
