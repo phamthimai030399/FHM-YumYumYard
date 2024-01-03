@@ -358,4 +358,7 @@
 }
 }
 @media (max-width: 480px) {
+  .missions .mission .mission-container {
+    padding: 40px;
+  }
 }
