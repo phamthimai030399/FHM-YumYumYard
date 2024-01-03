@@ -172,60 +172,190 @@
 
 /* POSTER ABOUT US  */
 .poster-about-us {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 @media (max-width: 991.99px) {
-    .poster-about-us .bg-poster {
-        aspect-ratio: 1/0.65;
-    }
-    .poster-about-us {
-        margin-top: 70px;
-    }
+  .poster-about-us .bg-poster {
+    aspect-ratio: 1/0.65;
+  }
+  .poster-about-us {
+    margin-top: 70px;
+  }
 }
 
 /* POSTER MAP */
 .poster-map {
-    margin-top: 120px;
-    position: relative;
+  margin-top: 120px;
+  position: relative;
 }
 .poster-map .poster-content {
-    position: absolute;
-    top: 15%;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
 }
 .poster-map .block-title {
-    margin: 0 15%;
+  margin: 0 15%;
 }
 .poster-map .block-title h2.block-title-main {
-    color: #fff;
+  color: #fff;
 }
 @media (max-width: 991.99px) {
-    .poster-map {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .poster-map .poster-content {
-        position: unset;
-    }
-    .poster-map .block-title h2.block-title-main {
-        color: #000;
-    }
-    .poster-map .block-title {
-        margin: 0;
-        margin-bottom: 50px;
-    }
+  .poster-map {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .poster-map .poster-content {
+    position: unset;
+  }
+  .poster-map .block-title h2.block-title-main {
+    color: #000;
+  }
+  .poster-map .block-title {
+    margin: 0;
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 767.99px) {
-    .poster-map .block-title h2.block-title-main {
-        font-size: 32px;
-    }
+  .poster-map .block-title h2.block-title-main {
+    font-size: 32px;
+  }
 }
 @media (max-width: 480px) {
-    .poster-map .block-title {
-        margin-bottom: 30px;
-    }
-    .poster-map .block-title h2.block-title-main {
-        font-size: 28px;
-    }
+  .poster-map .block-title {
+    margin-bottom: 30px;
+  }
+  .poster-map .block-title h2.block-title-main {
+    font-size: 28px;
+  }
+}
+
+/* MISSIONS  */
+.missions {
+  margin-top: 120px;
+  position: relative;
+}
+.missions .element-decor:nth-child(1){
+    width: 7%;
+    top: 40%;
+    left: 10%;
+    animation: leafOne 8s linear infinite;
+}
+.missions .element-decor:nth-child(2) {
+  width: 5%;
+  top: 30%;
+  right: 15%;
+  animation: leafOne 5s linear infinite;
+}
+.missions .element-decor:nth-child(3) {
+  width: 11%;
+  top: 55%;
+  left: 0%;
+  animation: leafOne 7s linear infinite;
+}
+.missions .element-decor:nth-child(4) {
+  width: 12%;
+  top: 40%;
+  right: 0%;
+  animation: leafOne 10s linear infinite;
+}
+.missions .element-decor:nth-child(5) {
+  width: 7%;
+  top: 80%;
+  right: 10%;
+  animation: leafOne 10s linear infinite;
+}
+.missions .mission {
+  position: relative;
+  padding-bottom: 20%;
+  padding-top: 10%;
+  margin-top: 100px;
+}
+.missions .mission:nth-child(2n+1) .element-decor-item:nth-child(1) {
+  left: 46%;
+  width: 30%;
+  top: 45%;
+}
+.missions .mission:nth-child(2n+1) .element-decor-item:nth-child(2) {
+  right: 0;
+  width: 35%;
+  top: 10%;
+  z-index: 1;
+}
+.missions .mission:nth-child(2n+1) .element-decor-item:nth-child(3) {
+  left: 0;
+  width: 25%;
+  top: 60%;
+  z-index: 1;
+}
+.missions .mission .mission-container {
+  display: inline-flex;
+  padding: 40px 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.missions .mission:nth-child(2n + 1) .mission-container {
+  width: 50%;
+}
+.missions .mission:nth-child(2n) .mission-container {
+  width: 50%;
+  margin-left: 50%;
+}
+.missions .mission:nth-child(2n) .element-decor-item:nth-child(1) {
+  width: 35%;
+  left: 20%;
+  top: 35%;
+}
+.missions .mission:nth-child(2n) .element-decor-item:nth-child(2) {
+  width: 30%;
+  left: 0;
+  top: 10%;
+  z-index: 4;
+}
+.missions .mission:nth-child(2n) .element-decor-item:nth-child(3) {
+  width: 50%;
+  left: 56%;
+  top: 52%;
+}
+.missions .mission-container p {
+  color: #656668;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (max-width: 991.99px) {
+  .missions .element-decor {
+    display: none;
+  }
+  .missions .mission .element-decor-item:nth-child(1),
+  .missions .mission .element-decor-item:nth-child(2) {
+   display: none;
+  }
+  .missions .mission .mission-container {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .missions .mission {
+    padding-bottom: 10%;
+    margin: 0;
+  }
+  .missions .mission:nth-child(2n+1) .element-decor-item:nth-child(3) {
+    left: 0;
+    width: 35%;
+    top: 75%;
+    z-index: 1;
+}
+.missions .mission:nth-child(2n) .element-decor-item:nth-child(3) {
+  width: 50%;
+  left: 50%;
+  top: 68%;
+}
+}
+@media (max-width: 480px) {
 }
